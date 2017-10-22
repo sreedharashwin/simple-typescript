@@ -9,7 +9,8 @@
     "start": "tsc --watch",
     "test": "jest",
     "test:watch": "npm run test -- --watch",
-    "lint": "tslint --format stylish src/**/*.ts"
+    "lint": "tslint --format stylish src/**/*.ts",
+    "format": "prettier --single-quote --trailing-comma es5 --print-width 120 --write 'src/**/*.ts'"
   },
   "keywords": [
     "typescript",
@@ -24,6 +25,11 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/blurbyte/simple-typescript-quickstart"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "printWidth": 120
   },
   "jest": {
     "testEnvironment": "node",
