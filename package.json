@@ -10,7 +10,8 @@
     "test": "jest",
     "test:watch": "npm run test -- --watch",
     "lint": "tslint --format stylish src/**/*.ts",
-    "format": "prettier --single-quote --trailing-comma es5 --print-width 120 --write 'src/**/*.ts'"
+    "format": "prettier --single-quote --trailing-comma es5 --print-width 120 --write 'src/**/*.ts'",
+    "precommit": "lint-staged"
   },
   "keywords": [
     "typescript",
@@ -48,10 +49,18 @@
       "<rootDir>/**/?(*.)test.ts"
     ]
   },
+  "lint-staged": {
+    "**/*.ts": [
+      "prettier --single-quote --trailing-comma es5 --print-width 120 --write",
+      "git add"
+    ]
+  },
   "devDependencies": {
     "@types/jest": "21.1.4",
     "@types/node": "8.0.46",
+    "husky": "0.14.3",
     "jest": "21.2.1",
+    "lint-staged": "4.3.0",
     "prettier": "1.7.4",
     "rimraf": "2.6.2",
     "ts-jest": "21.1.3",
