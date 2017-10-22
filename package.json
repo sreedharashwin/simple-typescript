@@ -9,7 +9,7 @@
     "start": "tsc --watch",
     "test": "jest",
     "test:watch": "npm run test -- --watch",
-    "lint": "tslint --format stylish src/**/*.ts",
+    "lint": "tslint --format stylish 'src/**/*.ts'",
     "format": "prettier --single-quote --trailing-comma es5 --print-width 120 --parser typescript --write 'src/**/*.ts'",
     "precommit": "lint-staged"
   },
