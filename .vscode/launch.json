@@ -7,7 +7,7 @@
         {
             "type": "node",
             "request": "launch",
-            "preLaunchTask": "Compile",
+            "preLaunchTask": "Start dev",
             "name": "Launch program",
             "cwd": "${workspaceRoot}",
             "program": "${workspaceRoot}/src/index.ts",

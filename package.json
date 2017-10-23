@@ -5,8 +5,10 @@
   "private": true,
   "main": "dist/index.js",
   "scripts": {
-    "prestart": "rimraf dist",
-    "start": "tsc --watch",
+    "precompile": "rimraf dist",
+    "compile": "tsc",
+    "compile:watch": "npm run compile -- --watch",
+    "start": "npm run compile:watch",
     "test": "jest",
     "test:watch": "npm run test -- --watch",
     "lint": "tslint --format stylish 'src/**/*.ts'",
