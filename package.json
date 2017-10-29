@@ -12,7 +12,7 @@
     "test": "jest",
     "test:watch": "npm run test -- --watch",
     "lint": "tslint --format stylish 'src/**/*.ts'",
-    "format": "prettier --single-quote --trailing-comma es5 --print-width 120 --parser typescript --write 'src/**/*.ts'",
+    "format": "prettier --single-quote --print-width 120 --trailing-comma none --parser typescript --write 'src/**/*.ts'",
     "precommit": "lint-staged"
   },
   "keywords": [
@@ -31,7 +31,7 @@
   },
   "prettier": {
     "singleQuote": true,
-    "trailingComma": "es5",
+    "trailingComma": "none",
     "printWidth": 120,
     "parser": "typescript"
   },
@@ -54,7 +54,7 @@
   },
   "lint-staged": {
     "**/*.ts": [
-      "prettier --single-quote --trailing-comma es5 --print-width 120 --parser typescript --write",
+      "prettier --single-quote --print-width 120 --trailing-comma none --parser typescript --write",
       "git add"
     ]
   },
