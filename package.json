@@ -1,14 +1,12 @@
 {
   "name": "simple-typescript-quickstart",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple base for TypeScript projects, with basic tooling configured.",
   "private": true,
-  "main": "dist/index.js",
+  "main": "public/index.js",
   "scripts": {
-    "precompile": "rimraf dist",
-    "compile": "tsc",
-    "compile:watch": "npm run compile -- --watch",
-    "start": "npm run compile:watch",
+    "precompile": "rimraf public",
+    "start": "tsc-watch --outDir ./public --onSuccess 'node public/server.js'",
     "test": "jest",
     "test:watch": "npm run test -- --watch",
     "lint": "tslint --format stylish 'src/**/*.ts'",
