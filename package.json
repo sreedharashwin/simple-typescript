@@ -6,7 +6,7 @@
   "main": "public/index.js",
   "scripts": {
     "precompile": "rimraf public",
-    "start": "tsc-watch --outDir ./public --onSuccess 'node public/server.js'",
+    "start": "tsc-watch --outDir ./public --onSuccess 'node public/index.js'",
     "test": "jest",
     "test:watch": "npm run test -- --watch",
     "lint": "tslint --format stylish 'src/**/*.ts'",
