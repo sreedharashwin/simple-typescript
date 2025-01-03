@@ -18,7 +18,7 @@
     "tslint",
     "jest"
   ],
-  "author": "blurbyte",
+  "author": "sreedharashwin",
   "license": "MIT",
   "engines": {
     "node": ">=8"
