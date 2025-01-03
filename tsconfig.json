@@ -9,7 +9,7 @@
     "importHelpers": true,
     "noEmitHelpers": true,
     "emitDecoratorMetadata": false,
-    "experimentalDecorators": false,
+    "experimentalDecorators": true,
     "pretty": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
