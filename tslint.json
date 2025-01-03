@@ -33,7 +33,7 @@
     "no-empty": true,
     "no-eval": true,
     "no-string-literal": true,
-    "no-trailing-whitespace": false,
+    "no-trailing-whitespace": true,
     "no-unused-expression": true,
     "one-line": [
       true,
