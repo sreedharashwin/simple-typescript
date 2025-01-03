@@ -1,7 +1,6 @@
 {
   "recommendations": [
       "eg2.tslint",
-      "formulahendry.auto-close-tag",
-      "EditorConfig.editorconfig"
+      "formulahendry.auto-close-tag"
   ]
 }
